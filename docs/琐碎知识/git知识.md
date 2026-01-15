@@ -49,7 +49,8 @@
       （注意一个问题 就是  比如  fun变基到master后，会把两个分支共祖（4版）后的所有fun变到master后！！！
         4版-》5版  master
            -》4.1版-》4.2版-》4.3版 fun
-    
+    所以：我个人的项目：
+    1. 合并：
    
    ~~~
 > 这是合并：完成C4以后，切换到master分支 将C4合并到master；或者说叫 合并expriment：git merge expriment
