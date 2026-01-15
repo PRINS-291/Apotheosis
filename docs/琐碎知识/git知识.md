@@ -53,6 +53,10 @@
     1. 合并：master改好了 然后切换到远程分支 合并master；切换到master分支 推送，远程标签就会同步到master最新版
     2. 变基：master改好了 把master变基到远程分支 推送，远程标签就会同步到master最新版
     两种都行；几个人协作的那种 没试过到时候再说
+    
+    修正提交：
+     原本是master 远程 在一个版本；；结果本地修正提交，master 远程就各自占一个版本，此时再推送 肯定得解决冲突了；
+     所以 远程仓库 不存在修正，每一次改动 就得一个新提交
    
    ~~~
 > 这是合并：完成C4以后，切换到master分支 将C4合并到master；或者说叫 合并expriment：git merge expriment
@@ -61,3 +65,5 @@
 > 这是变基：完成C4以后，不切换，就在expriment分支 变基到master ；git rebase master
 ![替代文字](../pic/变基.png "图片标题")
 
+> 修正提交的情况
+![替代文字](../pic/修正提交.png "图片标题")
