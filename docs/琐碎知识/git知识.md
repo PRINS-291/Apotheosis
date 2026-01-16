@@ -10,16 +10,23 @@
    
    ~~~text
    因为可以本地 1 对 多个远程 所以得给他们起名字以区分
-   默认origin
+   (注意：推送的时候可以选仓库，选不了说明定义的时候可能有问题 再来一次就行)
+   常见场景：
+    origin：主仓库（如 GitHub/GitLab）
+    backup：备份仓库（如 Gitee、自建 Git 服务器）
+    mirror：镜像仓库
+    fork：fork 的仓库（用于贡献代码）
    ~~~
+
 3. 不要远程仓库了：
-   
-   ~~~text
-   先控制台 取消关联
-   git remote remove origin
-   
-   然后删除github 库就行
-   ~~~
+
+~~~text
+先控制台 取消关联
+git remote remove origin
+
+然后删除github 库就行
+~~~
+
 4. 本地修正提交 再推；看来确实是不能实现 不增加提交记录了
    
    ~~~text
